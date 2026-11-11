@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase | Online Store</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home">ShopEase<span>.</span></a>
+    <nav>
+      <a href="#" data-page="home">Shop</a>
+      <a href="#" data-page="orders" class="auth-link">My Orders</a>
+      <a href="#" data-page="admin" id="admin-link" hidden>Admin</a>
+    </nav>
+    <div class="nav-actions"><span id="user-label"></span><button class="btn btn-outline" id="auth-button">Login</button><button class="cart-button" id="cart-open">Cart <b id="cart-count">0</b></button></div>
+  </header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">EVERYDAY ESSENTIALS, DELIVERED</p><h1>Find something<br><em>you'll love.</em></h1><p>Simple shopping. Great products. A smooth checkout.</p><a class="btn" href="#products">Explore products</a></div><div class="hero-art">S<span>H</span>OP</div></section>
+    <section id="products" class="section"><div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Featured products</h2></div><input id="search" class="search" placeholder="Search products..."></div><div id="product-grid" class="product-grid"></div></section>
+    <section id="page-content" class="section" hidden></section>
+  </main>
+  <footer>© 2026 ShopEase. Built as a full-stack learning project.</footer>
+  <div id="modal" class="modal" hidden><div class="modal-card"><button class="close" id="modal-close">×</button><div id="modal-content"></div></div></div>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body></html>
